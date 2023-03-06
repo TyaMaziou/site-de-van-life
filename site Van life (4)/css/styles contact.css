@@ -1,0 +1,285 @@
+header{
+	background: url(https://www.we-van.com/data/uploads//14-pyrenees-1.jpg);
+	background-size: 100%;
+	font-size: 60px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	padding-bottom: 2px;
+}
+
+
+/* contenuesous forme de boite
+
+/*left*/
+
+div#content div{
+	display: inline-block;
+	width: 48%;
+}
+
+div#content div p{
+	margin: 20px;
+	vertical-align: top;
+
+}
+
+	div#content div.leftbox{
+		vertical-align: left;
+		background: whitesmoke;
+	}
+
+/*right*/
+
+div#content div.rightbox{
+	vertical-align: top;
+	background-color: gray;
+}
+
+div#content div h2 a, iframe{
+	vertical-align: right;
+	margin: 30px;
+}
+
+	div#content div{
+			width: 45%;
+	}
+
+/* bouttons*/
+ nav.menu-nav ul li.btn a{
+	color: whitesmoke;
+	text-decoration: none;
+	background-color: burlywood;
+}
+
+nav.menu-nav ul li.btn{
+	display: inline-block;
+	list-style-type: none ;
+	padding: 10px;
+	font-size: 30px;
+}
+
+ul li.btn a {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all .35s;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+
+nav.menu-nav ul li.btn:hover a{
+	color: white;
+	background-color: #4C5097;
+	transition: 0.6s all;
+}
+
+
+
+/* formulaire pour me contacter (java) */
+ /* Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(message => alert(message)
+);  */
+
+/* https://lesdocs.fr/envoi-du-contenu-dun-formulaire-vers-un-email/ voir ce lien aussi
+/* Modifier code  */
+
+
+
+/*formulaire pour me contacter*/
+ 
+body{
+	background: url(https://tse1.mm.bing.net/th?id=OIP.ntx_dJhVwRnnIhlLVmgN-gHaLH&pid=Api&P=0&w=300&h=300);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+form{
+	padding: 0px;
+	margin: 0px;
+	top: 70%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-70%, -50%);
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	background-color: whitesmoke;
+	padding: 20px;
+	border-radius: 30px;
+}
+form h1{
+	font-size: 20px;
+}
+
+form .separation{
+	width: 100%;
+	height: 1px;
+	background-color: black;
+}
+
+form .corps-formulaire{
+	display: flex;
+	flex-wrap: wrap ;
+	margin-bottom: 30px;
+}
+
+body .corps-formulaire .boite{
+	position: relative;
+	margin-top: none;
+	display: flex;
+	flex-direction: column;
+}
+
+form .corps-formulaire .gauche .boite input{
+ margin-top: 5px;
+ padding: 10px 5px 10px 30px;
+ border: 1px solid #c9c9c9;
+ outline-color: black;
+ border-radius: 10px;
+}
+
+form .corps-formulaire .gauche .boite i{
+	position: absolute;
+	left: 0;
+	top: 25px;
+	padding: 9px 9px;
+	color: darkcyan;
+}
+
+form .corps-formulaire .droite{
+	margin-left: 40px;
+}
+
+form .corps-formulaire .droite .boite{
+	height: 100%;
+}
+
+form .corps-formulaire .droite .boite textarea{
+	margin-top: 5px;
+	padding: 10px;
+	background-color: #F8F8F8;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 5px;
+	resize: none;
+	height: 72%;
+}
+
+form .pied-formulaire button{
+	margin-top: 10px;
+	background-color: grey;
+	color: black;
+	font-size: 15px;
+	border: none;
+	padding: 10px 10px;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	transition: transform 0.5;
+}
+
+form .pied-formulaire button:hover{
+	transform: scale(1.10);
+} 
+
+/* 
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact__container{
+    color: #fff;
+}
+
+.contact-form input, .contact-form textarea{
+    outline: auto;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background: whitesmoke;
+    border-radius: 0.4rem;
+}
+
+.contact-form .send-btn{
+    width: 120px;
+    color: #000000;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.contact-form .send-btn:hover{
+    width: 120px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    background:  rgba(196, 188, 255, 0.475);
+    cursor: pointer;
+}
+
+.contact-form input:hover, .contact-form textarea:hover{
+    outline: auto;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background:  rgba(196, 188, 255, 0.447);
+    border-radius: 0.4rem;
+}
+
+
+footer{
+	position: absolute;
+	background-color: whitesmoke;
+} */
